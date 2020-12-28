@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>70</y>
+      <width>104</width>
+      <height>70</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuConvert">
+    <property name="title">
+     <string>Convert</string>
+    </property>
+    <addaction name="actionBold_Unbold_Ctrl_b"/>
+    <addaction name="actionSubScript"/>
+    <addaction name="actionSuperScript"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout_Me">
+    <property name="title">
+     <string>About Me</string>
+    </property>
+    <addaction name="actionCV"/>
+    <addaction name="actionPicture"/>
+   </widget>
+   <addaction name="menuConvert"/>
+   <addaction name="menuAbout_Me"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionBold_Unbold_Ctrl_b"/>
+   <addaction name="actionSubScript"/>
+   <addaction name="actionSuperScript"/>
+   <addaction name="separator"/>
+   <addaction name="actionCV"/>
+   <addaction name="actionPicture"/>
+  </widget>
+  <action name="actionBold_Unbold_Ctrl_b">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/Bold.png</normaloff>:/Images/Bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bold/Unbold</string>
+   </property>
+   <property name="whatsThis">
+    <string>To Bold/ Unbold Text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionSubScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/images - Copy.png</normaloff>:/Images/images - Copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>SubScript</string>
+   </property>
+   <property name="whatsThis">
+    <string>click to SubScript text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionSuperScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/images1.png</normaloff>:/Images/images1.png</iconset>
+   </property>
+   <property name="text">
+    <string>SuperScript</string>
+   </property>
+   <property name="whatsThis">
+    <string>click to SuperScript text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="actionCV">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/Cv.png</normaloff>:/Images/Cv.png</iconset>
+   </property>
+   <property name="text">
+    <string>CV</string>
+   </property>
+   <property name="whatsThis">
+    <string>CV</string>
+   </property>
+  </action>
+  <action name="actionPicture">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/DP.png</normaloff>:/Images/DP.png</iconset>
+   </property>
+   <property name="text">
+    <string>Picture</string>
+   </property>
+   <property name="whatsThis">
+    <string>My photo</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="AppResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

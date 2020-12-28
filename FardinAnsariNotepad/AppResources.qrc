@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>images - Copy.png</file>
+        <file>images1.png</file>
+        <file>Bold.png</file>
+        <file>Subscript.png</file>
+        <file>Cv.png</file>
+        <file>IIITN_CSE_FARDIN_ANSARI_CV.pdf</file>
+        <file>DP.png</file>
+    </qresource>
+</RCC>
