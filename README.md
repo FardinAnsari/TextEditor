@@ -33,7 +33,7 @@ $ ./FardinAnsariNotepad
 * CREATING A NEW PROJECT : 
 In QT Creator, a QT widgets application is created.
 
-`File -> New File or Project -> Application -> QT Widgets Application (Choose) -> Name & Location (Next) -> Desktop Kit (Next) -> Classname: MyTextEditor (Next) -> Finish`
+`File -> New File or Project -> Application -> QT Widgets Application (Choose) -> Name & Location (Next) -> Desktop Kit (Next) -> Classname: FardinAnsariNotepad (Next) -> Finish`
 
 * DESIGNING UI : 
 Open `mainwindow.ui` file in QT Creator. Drag and Drop a "Text Edit" Input Widget into the editor area. In order to have the text edit widget occupy the whole screen, we add setCentralWidget to the main window.
@@ -52,7 +52,7 @@ Press Ctrl+S (or Cmd+S) to save your changes.
 In the `appresources.qrc` file in "Resources", add a prefix `\Images` and add a file (bold.png) along with other images and necessary documents inside Images.
 ``"Edit action" of "Bold Action" -> Icon (select)``
 
-* Right Click the action -> "Go to Slot" -> Triggered (bool) (Ok). Function "on_actionBold_triggered(bool checked)" is created in "mytexteditor.cpp" . Add this line inside the function. 
+* Right Click the action -> "Go to Slot" -> Triggered (bool) (Ok). Function "on_actionBold_triggered(bool checked)" is created in "mainwindows.cpp" . Add this line inside the function. 
 
 ```sh
 checked ? ui->textEdit->setFontWeight(QFont::Bold) :
